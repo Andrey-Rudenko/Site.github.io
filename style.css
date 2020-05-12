@@ -40,6 +40,7 @@ header{
 .main-menu a {
   /* немного стилизуем ссылки */
   display: block;
+  border-bottom: 15px solid rgb(5, 0, 17);
   color: lightslategray;
   text-decoration: none;
   background-color: rgb(5, 0, 17);
