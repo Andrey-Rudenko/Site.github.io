@@ -185,7 +185,8 @@ header{
   }
   .homePage{
     background-image: url(images/meatVertical.jpg);
-    background-size: 200% 230%;
+    background-size: 120% 100%;
+    background-position-x: -20px;
     margin-left: -3%;
     width: 106%;
     margin-top: 59px;
@@ -197,11 +198,11 @@ header{
     margin-top: 0px;
   }
   .homePage .button{
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 25%;
     margin-right: 20%;
     font-size: 20px;
-    margin-bottom: 15%;
+    margin-bottom: 130%;
     padding: 4% 4%;
   }
 
@@ -209,8 +210,8 @@ header{
   font-size: 150%;
   text-align: center;
   padding: 0;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
   margin-top: 0;
   }
