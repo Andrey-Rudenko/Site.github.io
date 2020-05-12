@@ -185,6 +185,7 @@ header{
   }
   .homePage{
     background-image: url(images/meatVertical.jpg);
+    background-size: 200% 230%;
     margin-left: -3%;
     width: 106%;
     margin-top: 59px;
@@ -200,7 +201,7 @@ header{
     margin-left: 25%;
     margin-right: 20%;
     font-size: 20px;
-    margin-bottom: 130%;
+    margin-bottom: 15%;
     padding: 4% 4%;
   }
 
