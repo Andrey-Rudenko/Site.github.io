@@ -1,0 +1,175 @@
+body{
+  font-family: Arial Black;
+  background-color: rgb(230, 212, 212);
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+/* Menu  */
+#menu-checkbox {
+  /* чекбокс скрыт */
+  display: none;
+}
+.main-menu {
+  /* пункты меню скрыты */
+  display: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+.main-menu li {
+  /* пункты меню расположены вертикально */
+  /* каждый имеет ширину 100% */
+  font-size: 1.3em;
+  display: block;
+  width: 100%;
+
+}
+.main-menu .first{
+  margin-top: -18px;
+}
+.main-menu a {
+  /* немного стилизуем ссылки */
+  display: block;
+  border-bottom: 2px solid rgb(5, 0, 17);
+  color: lightslategray;
+  text-decoration: none;
+  background-color: #333;
+
+}
+.main-menu a:hover {
+  text-decoration: underline;
+}
+.toggle-button {
+  text-align: center;
+  display: block;
+  /* не забываем явно указать каким должен быть курсор */
+  cursor: pointer;
+  color: #fff;
+}
+.toggle-button:after {
+  /* получаем данные из атрибута data-open в html */
+  content: attr(data-open);
+  display: block;
+  margin: 10px 0;
+  padding: 10px 30px;
+}
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+  /* когда чекбокс активен меню становится видимым */
+  display: block;
+}
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+  content: attr(data-close);
+}
+
+
+.homePage{
+  background-image: url(images/meat.jpg);
+  background-size: 100% 100%;
+  width: 105%;
+  z-index: -1;
+  display: block;
+  margin-left: -2%;
+  margin-top: -10px;
+}
+.homePage .logo{
+  margin-top: 50px;
+  width: 30%;
+  padding: 2%;
+  margin-left: 5%;
+}
+.homePage .text{
+  color: whitesmoke;
+  font-size: 150%;
+  margin-right: 65%;
+  margin-left: 8%;
+}
+.homePage .button{
+  background-color: rgb(143, 33, 33);
+  border: none;
+  color: white;
+  padding: 2% 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  font-family: Arial Black;
+}
+.homePage .line{
+  background-color: black;
+  width: 100%;
+  height: 40px;
+}
+@media screen and (min-width: 640px) {
+  .toggle-button {
+    /* label скрыт */
+    display: none;
+  }
+  .main-menu {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, 0);
+    height: 30px;
+  }
+  .main-menu li {
+    /* теги <li> расположены в ряд */
+    width: calc(100% / 5);
+    text-align: center;
+    display: inline-block;
+    margin-right: -80px;
+  }
+  .main-menu a {
+    display: inline-block;
+    font-size: .8em;
+    background-color: rgba(51, 51, 51, 0);
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    border-bottom: 0;
+  }
+}
+@media  screen and (max-width: 640px){
+  header{
+    background-color: rgb(5, 0, 17);
+
+  }
+  .homePage{
+    background-image: url(images/meatVertical.jpg);
+    margin-left: -3%;
+    width: 106%;
+    margin-top: 59px;
+  }
+  .homePage .logo{
+    margin-top: 50px;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 0px;
+  }
+  .homePage .button{
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 15px;
+    margin-bottom: 130%;
+    padding: 4% 4%;
+  }
+  .homePage .text{
+  font-size: 130%;
+  text-align: center;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  margin-top: 0;
+  }
+}
