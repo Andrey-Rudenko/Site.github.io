@@ -162,7 +162,7 @@ header{
   display:inline-block;
   text-decoration: none;
 }
-.products p{
+.products a p{
   color: white;
   text-decoration: none;
   vertical-align:middle;
