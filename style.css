@@ -77,7 +77,7 @@ header{
 .homePage{
   background-image: url(images/meat.jpg);
   background-size: 100% 100%;
-  width: 106.5%;
+  width: 106.4%;
   z-index: -1;
   display: block;
   margin-left: -3.2%;
@@ -322,7 +322,7 @@ footer li{
     background-size: 125% 100%;
     background-position-x: -40px;
     margin-left: -3.2%;
-    width: 106.3%;
+    width: 106.4%;
     margin-top: 59px;
   }
   .homePage .logo{
