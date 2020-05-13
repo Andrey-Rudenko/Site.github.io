@@ -257,7 +257,9 @@ footer li{
   padding-top: 5%;
   padding-bottom: 5%;
   color:white;
-
+}
+.download a{
+  text-decoration-color: red;
 }
 @media screen and (min-width: 640px) {
   .toggle-button {
