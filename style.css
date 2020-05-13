@@ -393,13 +393,13 @@ footer li{
 }
 @media  screen and (max-width: 430px){
   .contact ul p{
-    margin-top: -10%;
+    margin-top: -12%;
   }
   .contact ul{
-    margin-left: 5%;
+    margin-left: 2%;
   }
   .contact li{
-    font-size: 100%;
+    font-size: 120%;
   }
   .contact li img{
     width: 13%;
