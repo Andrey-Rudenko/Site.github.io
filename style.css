@@ -183,6 +183,9 @@ header{
     border: 1px solid #000; /* Рамка вокруг текста */
     padding: 3px; /* Поля вокруг текста */
 }
+.photoImg{
+  display: none;
+}
 @media screen and (min-width: 640px) {
   .toggle-button {
     /* label скрыт */
@@ -253,5 +256,11 @@ header{
   }
   .products img{
     top:10px;
+  }
+  .photo{
+    display: none;
+  }
+  .photoImg{
+    display: block;
   }
 }
